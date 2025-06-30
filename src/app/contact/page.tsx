@@ -1,10 +1,22 @@
+import ContactForm from "@/components/ContactForm";
+
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-black text-white px-4 md:px-8 py-12 flex items-center justify-center">
-      <div className="max-w-screen-lg mx-auto">
-        <h1 className="text-3xl font-bold border-b border-gray-700 pb-2 mb-6">Contact</h1>
-        <p className="text-gray-400">This is a placeholder for the Contact page. More content coming soon.</p>
+    <div>
+      <h1 className="text-3xl font-bold border-b pb-2 mb-6">Contact</h1>
+      <div className="bg-gray-900 rounded-md">
+        <div className="flex gap-6 text-gray-400 text-sm border-b border-gray-700 px-4 py-2">
+          <span className="text-white">Console</span>
+          <span>Elements</span>
+          <span>Network</span>
+        </div>
+        <div className="p-4 font-mono text-sm text-green-400 bg-black border-b border-gray-700">
+          &gt; console.log(&quot;Let&apos;s get in touch!&quot;);
+        </div>
+        <div className="p-4">
+          <ContactForm />
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

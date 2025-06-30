@@ -1,38 +1,44 @@
-"use client"
-import { motion } from "framer-motion";
+"use client";
 import { useEffect, useState } from "react";
 
-const TYPING_SPEED = 75;
+const lines = ["$ yarn start", "🚀 Launching varunj.dev..."];
+const TYPE_SPEED = 70;
 
 export default function TerminalIntro() {
-  const [text, setText] = useState("");
-  const fullText = "Hello, I'm Varun — Full Stack Developer";
+  const [display, setDisplay] = useState("");
+  const [line, setLine] = useState(0);
+  const [char, setChar] = useState(0);
 
   useEffect(() => {
-    let index = 0;
-    const typing = setInterval(() => {
-      setText(fullText.slice(0, index));
-      index += 1;
-      if (index > fullText.length) {
-        clearInterval(typing);
-      }
-    }, TYPING_SPEED);
-    return () => clearInterval(typing);
-  }, []);
+    if (line >= lines.length) return;
+    if (char < lines[line].length) {
+      const timeout = setTimeout(() => {
+        setDisplay((d) => d + lines[line][char]);
+        setChar(char + 1);
+      }, TYPE_SPEED);
+      return () => clearTimeout(timeout);
+    }
+    const timeout = setTimeout(() => {
+      setDisplay((d) => d + "\n");
+      setLine(line + 1);
+      setChar(0);
+    }, TYPE_SPEED);
+    return () => clearTimeout(timeout);
+  }, [line, char]);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      className="w-full max-w-xl bg-black text-green-400 p-6 font-mono rounded shadow-lg"
-    >
-      <p className="mb-2">Booting varunj.dev...</p>
-      <p>
-        {text}
-        <span className="ml-1 animate-pulse">█</span>
-      </p>
-    </motion.div>
+    <div className="flex flex-col items-center justify-center min-h-screen text-green-400 text-2xl leading-relaxed text-center font-mono">
+      <pre className="whitespace-pre-wrap mb-4">
+        {display}
+        <span className="animate-pulse">█</span>
+      </pre>
+      {line >= lines.length && (
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold text-white">Varun Jallepalli</h1>
+          <p className="text-gray-300">Creative Coder • Fullstack Developer</p>
+          <p className="animate-pulse">Press ⏎ to Begin</p>
+        </div>
+      )}
+    </div>
   );
 }
-
