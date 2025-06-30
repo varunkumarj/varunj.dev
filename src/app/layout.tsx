@@ -19,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${jetBrains.variable} font-mono antialiased bg-black text-white`}
-      >
+      <body className={`${jetBrains.variable} font-mono antialiased bg-black text-white`}>
         <Navbar />
-        {children}
+        <main className="min-h-screen px-4 md:px-8 py-8 max-w-screen-lg mx-auto">
+          {children}
+        </main>
       </body>
     </html>
   );

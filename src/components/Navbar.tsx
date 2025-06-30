@@ -16,16 +16,18 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-10 backdrop-blur bg-black/60 border-b border-gray-800">
-      <div className="container mx-auto max-w-screen-lg px-4">
-        <ul className="flex gap-6 items-center justify-center py-4 font-mono text-sm">
+    <nav className="sticky top-0 z-50 bg-black/70 backdrop-blur border-b border-gray-800">
+      <div className="mx-auto max-w-screen-lg px-4">
+        <ul className="flex justify-center gap-6 py-4 font-mono text-sm">
           {navItems.map(({ name, href }) => {
             const isActive = pathname === href;
             return (
               <li key={href}>
                 <Link
                   href={href}
-                  className={`${isActive ? "text-cyan-400 font-semibold" : "text-white"} hover:text-cyan-400 transition-colors duration-200`}
+                  className={`${
+                    isActive ? "text-cyan-400 font-semibold" : "text-gray-300"
+                  } hover:text-cyan-400 transition-colors duration-200`}
                 >
                   {name}
                 </Link>
