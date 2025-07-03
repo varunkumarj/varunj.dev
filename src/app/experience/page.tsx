@@ -19,7 +19,7 @@ export default function ExperiencePage() {
             <li>Created comprehensive unit and integration tests with Jest and React Testing Library, increasing code coverage to 85% and reducing production bugs by 40%.</li>
             <li>Automated CI/CD pipelines using Jenkins and Git, reducing deployment time to QA by 60% and achieving zero production rollout failures across 200+ builds.</li>
             <li>Led stakeholder demos using Figma prototypes and tracked sprint progress in Jira, reducing feedback cycles by 50% and ensuring business alignment.</li>
-            <li>Recognized with the "Delivery Excellence" award for launching 20+ mission-critical features ahead of schedule, helping reduce client operational costs by 15%.</li>
+            <li>Recognized with the &quot;Delivery Excellence&quot; award for launching 20+ mission-critical features ahead of schedule, helping reduce client operational costs by 15%.</li>
           </ul>
         </div>
         
@@ -37,7 +37,7 @@ export default function ExperiencePage() {
             <li>Built dynamic User Interface features using Angular and TypeScript for analytics dashboards and storefronts, increasing customer retention by 30%.</li>
             <li>Developed and maintained React Native apps with Firebase, decreasing crash rates by 35% and achieving a 4.8/5 rating across Android and iOS platforms.</li>
             <li>Mentored a team of 5 junior engineers in Agile development workflows using GitScrum and Jira, improving sprint velocity and reducing code review cycles by 50%.</li>
-            <li>Launched 10+ core features for the "Remush" Android app using Java, XML, and Retrofit, resulting in a 50% increase in downloads and a 35% boost in engagement within 6 months.</li>
+            <li>Launched 10+ core features for the &quot;Remush&quot; Android app using Java, XML, and Retrofit, resulting in a 50% increase in downloads and a 35% boost in engagement within 6 months.</li>
           </ul>
         </div>
       </div>

@@ -11,16 +11,13 @@ export default function AboutPage() {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
           <div className="lg:col-span-2">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Hello, I'm Varun Kumar Jallepalli</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-3 md:mb-4">Hello, I&apos;m Varun Kumar Jallepalli</h2>
             <div className="prose prose-invert max-w-none">
-              <p className="mb-4">
-                I'm a Full Stack Engineer with 4+ years of experience building scalable, high-performance web applications 
-                using React, Node.js, and AWS. My expertise includes designing modular APIs, optimizing SQL queries, 
-                and automating CI/CD workflows.
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
+                I&apos;m a passionate and driven software engineer with a knack for building elegant, efficient, and scalable solutions. My journey in tech is fueled by a relentless curiosity and a desire to solve real-world problems. I thrive in collaborative environments where I can learn from my peers and contribute to a shared vision. I&apos;m always excited to take on new challenges and push the boundaries of what&apos;s possible.
               </p>
               <p className="mb-4">
-                I have a strong foundation in clean architecture, test-driven development, and delivering secure, 
-                cloud-native systems. I'm passionate about writing reusable code and building intuitive user interfaces.
+                While I&apos;m not coding, you can find me exploring new hiking trails, experimenting with new recipes in the kitchen, or diving into a good book. I believe in a healthy work-life balance and find that my hobbies help me stay creative and energized. I&apos;m passionate about writing reusable code and building intuitive user interfaces.
               </p>
               <p className="mb-4">
                 Currently pursuing my Master of Science in Computer Science at The University of Texas at Arlington, 

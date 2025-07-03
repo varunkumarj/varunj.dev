@@ -15,71 +15,71 @@ export default function ConfigDisplay() {
         <code>
           <span className="text-primary-400">{'{'}</span>
           <br />
-          <span className="ml-2 text-primary-400">"name"</span>: <span className="text-warning">"Varun Kumar Jallepalli"</span>,
+          <span className="ml-2 text-primary-400">&quot;name&quot;</span>: <span className="text-warning">&quot;Varun Kumar Jallepalli&quot;</span>,
           <br />
-          <span className="ml-2 text-primary-400">"role"</span>: <span className="text-warning">"Full Stack Engineer"</span>,
+          <span className="ml-2 text-primary-400">&quot;role&quot;</span>: <span className="text-warning">&quot;Full Stack Engineer&quot;</span>,
           <br />
-          <span className="ml-2 text-primary-400">"location"</span>: <span className="text-warning">"Arlington, TX"</span>,
+          <span className="ml-2 text-primary-400">&quot;location&quot;</span>: <span className="text-warning">&quot;Arlington, TX&quot;</span>,
           <br />
-          <span className="ml-2 text-primary-400">"education"</span>: <span className="text-warning">"MS in Computer Science, UT Arlington"</span>,
+          <span className="ml-2 text-primary-400">&quot;education&quot;</span>: <span className="text-warning">&quot;MS in Computer Science, UT Arlington&quot;</span>,
           <br />
-          <span className="ml-2 text-primary-400">"experience"</span>: <span className="text-warning">"4+ years"</span>,
+          <span className="ml-2 text-primary-400">&quot;experience&quot;</span>: <span className="text-warning">&quot;4+ years&quot;</span>,
           <br />
-          <span className="ml-2 text-primary-400">"stack"</span>: <span className="text-primary-400">{'{'}</span>
+          <span className="ml-2 text-primary-400">&quot;stack&quot;</span>: <span className="text-primary-400">{'{'}</span>
           <br />
-          <span className="ml-4 text-primary-400">"frontend"</span>: [
+          <span className="ml-4 text-primary-400">&quot;frontend&quot;</span>: [
           <br />
-          <span className="ml-6 text-success">"React.js"</span>,
+          <span className="ml-6 text-success">&quot;React.js&quot;</span>,
           <br />
-          <span className="ml-6 text-success">"TypeScript"</span>,
+          <span className="ml-6 text-success">&quot;TypeScript&quot;</span>,
           <br />
-          <span className="ml-6 text-success">"Next.js"</span>,
+          <span className="ml-6 text-success">&quot;Next.js&quot;</span>,
           <br />
-          <span className="ml-6 text-success">"Angular"</span>
-          <br />
-          <span className="ml-4">],</span>
-          <br />
-          <span className="ml-4 text-primary-400">"backend"</span>: [
-          <br />
-          <span className="ml-6 text-success">"Node.js"</span>,
-          <br />
-          <span className="ml-6 text-success">"Express.js"</span>,
-          <br />
-          <span className="ml-6 text-success">"LoopBack"</span>
+          <span className="ml-6 text-success">&quot;Angular&quot;</span>
           <br />
           <span className="ml-4">],</span>
           <br />
-          <span className="ml-4 text-primary-400">"cloud"</span>: [
+          <span className="ml-4 text-primary-400">&quot;backend&quot;</span>: [
           <br />
-          <span className="ml-6 text-success">"AWS Lambda"</span>,
+          <span className="ml-6 text-success">&quot;Node.js&quot;</span>,
           <br />
-          <span className="ml-6 text-success">"API Gateway"</span>,
+          <span className="ml-6 text-success">&quot;Express.js&quot;</span>,
           <br />
-          <span className="ml-6 text-success">"DynamoDB"</span>,
+          <span className="ml-6 text-success">&quot;LoopBack&quot;</span>
           <br />
-          <span className="ml-6 text-success">"S3"</span>
+          <span className="ml-4">],</span>
+          <br />
+          <span className="ml-4 text-primary-400">&quot;cloud&quot;</span>: [
+          <br />
+          <span className="ml-6 text-success">&quot;AWS Lambda&quot;</span>,
+          <br />
+          <span className="ml-6 text-success">&quot;API Gateway&quot;</span>,
+          <br />
+          <span className="ml-6 text-success">&quot;DynamoDB&quot;</span>,
+          <br />
+          <span className="ml-6 text-success">&quot;S3&quot;</span>
           <br />
           <span className="ml-4">]</span>
           <br />
           <span className="ml-2 text-primary-400">{'}'}</span>,
           <br />
-          <span className="ml-2 text-primary-400">"achievements"</span>: [
+          <span className="ml-2 text-primary-400">&quot;achievements&quot;</span>: [
           <br />
-          <span className="ml-4 text-success">"Delivery Excellence Award"</span>,
+          <span className="ml-4 text-success">&quot;Delivery Excellence Award&quot;</span>,
           <br />
-          <span className="ml-4 text-success">"35% API Latency Reduction"</span>,
+          <span className="ml-4 text-success">&quot;35% API Latency Reduction&quot;</span>,
           <br />
-          <span className="ml-4 text-success">"45% Database Query Optimization"</span>
+          <span className="ml-4 text-success">&quot;45% Database Query Optimization&quot;</span>
           <br />
           <span className="ml-2">],</span>
           <br />
-          <span className="ml-2 text-primary-400">"contact"</span>: <span className="text-primary-400">{'{'}</span>
+          <span className="ml-2 text-primary-400">&quot;contact&quot;</span>: <span className="text-primary-400">{'{'}</span>
           <br />
-          <span className="ml-4 text-primary-400">"email"</span>: <span className="text-warning">"varunjallepalli@gmail.com"</span>,
+          <span className="ml-4 text-primary-400">&quot;email&quot;</span>: <span className="text-warning">&quot;varunjallepalli@gmail.com&quot;</span>,
           <br />
-          <span className="ml-4 text-primary-400">"linkedin"</span>: <span className="text-warning">"linkedin.com/in/varunkumarj"</span>,
+          <span className="ml-4 text-primary-400">&quot;linkedin&quot;</span>: <span className="text-warning">&quot;linkedin.com/in/varunkumarj&quot;</span>,
           <br />
-          <span className="ml-4 text-primary-400">"github"</span>: <span className="text-warning">"github.com/varunkumarj"</span>
+          <span className="ml-4 text-primary-400">&quot;github&quot;</span>: <span className="text-warning">&quot;github.com/varunkumarj&quot;</span>
           <br />
           <span className="ml-2 text-primary-400">{'}'}</span>
           <br />

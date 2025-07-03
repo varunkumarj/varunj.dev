@@ -9,7 +9,7 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="text-lg mb-8 max-w-2xl text-gray-300">
-          Here are some of the projects I've worked on. Each one represents a unique 
+          Here are some of the projects I&apos;ve worked on. Each one represents a unique 
           challenge and learning opportunity in my journey as a developer.
         </p>
         

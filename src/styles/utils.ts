@@ -17,7 +17,7 @@ export const cssVar = (path: string): string => {
  * Converts theme object to CSS variables
  */
 export const themeToVars = (
-  obj: Record<string, any>,
+  obj: Record<string, unknown>,
   prefix = ''
 ): Record<string, string> => {
   return Object.entries(obj).reduce((acc, [key, value]) => {
@@ -26,7 +26,7 @@ export const themeToVars = (
     if (typeof value === 'object' && value !== null) {
       return {
         ...acc,
-        ...themeToVars(value, varName),
+        ...themeToVars(value as Record<string, unknown>, varName),
       };
     }
     
@@ -67,10 +67,10 @@ export type ResponsiveValue<T> = {
 export const responsive = <T>(
   property: string,
   values: ResponsiveValue<T>
-): Record<string, any> => {
+): Record<string, unknown> => {
   const { base, ...breakpoints } = values;
   
-  const styles: Record<string, any> = {
+  const styles: Record<string, unknown> = {
     [property]: base,
   };
   

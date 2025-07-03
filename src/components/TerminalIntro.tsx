@@ -100,7 +100,7 @@ export default function TerminalIntro() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-gray-950 text-terminal-text p-2 sm:p-4 font-mono relative overflow-hidden"
+    <div className={`flex flex-col items-center justify-center min-h-screen w-full bg-gray-950 text-terminal-text p-2 sm:p-4 font-mono relative overflow-hidden ${exitAnimation ? 'animate-fadeOut' : ''}`}
       style={{
         backgroundImage: `radial-gradient(circle at 50% 50%, ${theme.colors.gray[800]} 0%, ${theme.colors.gray[950]} 100%)`,
         backgroundSize: 'cover',

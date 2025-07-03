@@ -76,7 +76,7 @@ export default function ContactForm() {
       
       {submitSuccess && (
         <div className="bg-success/20 border border-success text-success p-3 rounded-md text-sm">
-          Message sent successfully! I'll get back to you soon.
+          Message sent successfully! I&apos;ll get back to you soon.
         </div>
       )}
       
