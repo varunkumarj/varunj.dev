@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Card from "./Card";
 
 interface ProjectCardProps {
   title: string;
@@ -9,13 +10,24 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, stack, description, repo }: ProjectCardProps) {
   return (
-    <div className="bg-[#1a1a1a] p-6 rounded-lg border border-gray-700 transition-transform hover:scale-[1.02] hover:shadow-lg">
-      <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
-      <p className="text-sm text-cyan-300 mb-2">{stack.join(", ")}</p>
+    <Card 
+      variant="primary" 
+      className="transition-transform hover:scale-[1.02] hover:shadow-lg"
+    >
+      <h3 className="text-xl font-bold mb-2 text-primary-100">{title}</h3>
+      <p className="text-sm text-primary-400 mb-2">{stack.join(", ")}</p>
       <p className="text-gray-300 mb-4 text-sm">{description}</p>
-      <Link href={repo} className="text-cyan-400 hover:underline" target="_blank" rel="noopener noreferrer">
-        GitHub
+      <Link 
+        href={repo} 
+        className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-500 text-white rounded-md transition-colors text-sm font-medium" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+        View on GitHub
       </Link>
-    </div>
+    </Card>
   );
 }
